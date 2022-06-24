@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+    font-size:62.5% /*1rem = 10pixeles*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.register-form{
+    width: 40rem;
+    margin: 0 auto; 
+    padding: 0 2rem 6rem 2rem;
+    margin-top: 3.5rem;
+    text-align: left !important;
+    box-shadow: 0 1.9rem 3.8rem rgba(0,0,0,0.30), 0 1.5rem 1.2rem rgba(0, 0 , 0, 0.22);
+}
+
+.register-form h1{
+    color: midnightblue;
+    font-size: 2.8rem;
+    padding: 2rem 0 1rem 0;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"]{
+    width: 100%;
+    padding:1.5rem;
+    border: 1px solid #ced4da;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+/*boton de guardar*/
+.btn-save{
+    width: 50%;
+    padding:1rem;
+    margin-top: 1rem;
+    background-color: #1d4ed8;
+    border:0;
+    box-sizing:border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: larger;
+    color: #FFFFFF;
+}
+
+.btn-save:hover, .btn-save:active{
+    color:#fff;
+    background-color: #0d3bbb;
+    border-color: #0d3bbb;
+}
+
+.btn-save:focus{
+    box-shadow: 0 0 0 3px rgba(121, 82, 179, 0, 25);
+}
+
+/*boton de cancelar*/
+.btn-cancel{
+    display: inline;
+    padding:1.1rem 4.7rem;
+    margin-top: 1rem;
+    background-color: #9b9d9e;
+    border:0;
+    box-sizing:border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: larger;
+    color: #FFFFFF;
+    /*para dar apariencia al botón*/
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+}
+
+.btn-cancel:hover, .btn-cancel:active{
+    color:#fff;
+    background-color: #7e8081;
+    border-color: #7e8081;
+}
+
+.btn-cancel:focus{
+    box-shadow: 0 0 0 3px rgba(121, 82, 179, 0, 25);
+}
+
+
+/*select*/
+.select-css {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: .4em 1.4em .3em .8em;
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin:0;
+    margin-bottom: 1rem;
+    background-color: #f5f5f5;
+  }
+  .select-css::-ms-expand {
+    display: none;
+   }
+   .select-css:hover {
+    border-color: #888;
+   }
+   .select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+   }

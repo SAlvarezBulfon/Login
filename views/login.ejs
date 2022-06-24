@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!--Fuente POPPINS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="/resources/CSS/login.css">
+    
+</head>
+<body>
+    <div class="contenedor">
+        <div class="login-form">
+            <h1>Login</h1>
+            <form action="/auth" method = "POST">
+                <input type="text" name="user" id="user" placeholder="Username" >
+    
+                <input type="password" name="pass" id="pass" placeholder="password">
+                <input type="submit" value="Login" class="btn-login">
+            </form>
+            
+            <a href="/register" class="btn-register">Register</a>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if (typeof alert != "undefined") { %>
+         <script>
+             Swal.fire({
+                icon: '<%=alertIcon %>',
+                title: '<%= alertTitle %>',
+                text: '<%= alertMessage%>',
+                ShowConfirmButton: <%= showConfirmButton %>,
+                timer: <%= timer %>
+            }).then(()=>{
+                window.location ='/<%= ruta %>'
+            })
+         </script>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/resources/CSS/register.css">
+
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    
+</head>
+<body>
+    <div class="contenedor">
+        <div class="register-form">
+            <h1>Form Registration</h1>
+            <form action="register" method = "POST">
+                <label for="user">Username</label>
+                <input type="text" name="user" required>
+
+                <label for="name">Full name</label>
+                <input type="text" name="name" required>
+
+                <label for="rol">Rol</label>
+                <select name="rol" id="rol" class="select-css">
+                    <option value="admin" selected>Admin</option>
+                    <option value="data entry">Data Entry</option>
+                </select>
+
+
+                <label for="pass">Password</label>
+                <input type="password" name="pass" required>
+
+                <div style="display: inline;">
+                    <a href="/login" class="btn-cancel">Cancel</a>
+                    <input type="submit" class="btn-save" value="Save">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <% if (typeof alert != "undefined") { %>
+             <script>
+                 Swal.fire({
+                    icon: '<%= alertIcon %>',
+                    title: '<%= alertTitle %>',
+                    text: '<%= alertMessage%>',
+                    ShowConfirmButton: false,
+                    timer:1500
+                }).then(()=>{
+                    window.location ='/'
+                })
+             </script>
+        <% } %>
+</body>
+</html>

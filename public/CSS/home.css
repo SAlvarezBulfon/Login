@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+}
+
+/* Estilos de link para ir a LOGIN*/
+.a-login:link, .a-login:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #10B981;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .a-login:hover, .a-login:active {
+    background-color: #10B981;
+    color: white;
+  }
+  
+  /* Estilos de link para realizar el LOGOUT*/
+  .a-logout:link, .a-logout:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #F87171;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .a-logout:hover, .a-logout:active {
+    background-color: #F87171;
+    color: white;
+  }

@@ -1,0 +1,91 @@
+html {
+    box-sizing: border-box;
+    font-size:62.5% /*1rem = 10pixeles*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form, .contenedor {
+    width: 30rem;
+    margin: 0 auto;
+}
+
+.login-form h1{
+    text-align: center;
+    color: midnightblue;
+    font-size: 2.8rem;
+    padding: 7rem 0 1rem 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    width: 100%;
+    padding:1.5rem;
+    border: 1px solid #ced4da;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+/*ESTILOS DE BTN register*/
+.btn-register{
+    display: inline-block;
+    width: 100%;
+    padding:1.5rem;
+    margin-top: 1rem;
+    background-color: #34d399;
+    border:0;
+    box-sizing:border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: larger;
+    color: #FFFFFF;
+    /*para dar apariencia al botón*/
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+}
+
+.btn-register:hover, .btn-register:active{
+    color:#fff;
+    background-color: #34d399c2;
+    border-color: #2fc58ec2;
+}
+
+.btn-register:focus{
+    box-shadow: 0 0 0 3px rgba(121, 82, 179, 0, 25);
+}
+
+/*ESTILOS DE BTN LOGIN*/
+.btn-login{
+    width: 100%;
+    padding:1.5rem;
+    background-color: #6f42c1;
+    border:0;
+    box-sizing:border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: larger;
+    color: #FFFFFF;
+}
+
+.btn-login:hover, .btn-login:active{
+    color:#fff;
+    background-color: #61428f;
+    border-color: #6142bf;
+}
+
+.btn-login:focus{
+    box-shadow: 0 0 0 3px rgba(121, 82, 179, 0, 25);
+}
